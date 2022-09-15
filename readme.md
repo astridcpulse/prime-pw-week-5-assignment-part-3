@@ -51,7 +51,7 @@ Update the `3-music-collection.js` file to do the following:
 - Create a function called `search`. This function should:
   - Take an input parameter for a search criteria object. Create your solution based on a search object that has these properties:
   ```
-  { artist: 'Ray Charles', year: 1957 }
+  { artist: 'Ray Charles', year: 1957 }`
   ```
   - The returned output from `search` should meet these requirements:
     - Return a new array of all items in the `collection` matching *all* of the search criteria.

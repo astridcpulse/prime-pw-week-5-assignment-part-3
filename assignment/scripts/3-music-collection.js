@@ -25,3 +25,15 @@ console.log(addToCollection('Big Idgies Big Day', 'The Big Idgies', '2022')); //
 console.log(addToCollection('The Truth About', 'GridLick', '2022'));  //album 6
 
 console.log(collection);
+
+
+
+function showCollection(array){
+    console.log(array.length);
+
+    for (const item of array){
+        console.log(`${item.title} by ${item.artist}, published in ${item.yearPublished}`);
+    }
+}
+
+showCollection(collection);

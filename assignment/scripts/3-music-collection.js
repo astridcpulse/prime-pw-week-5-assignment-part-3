@@ -12,9 +12,9 @@ function addToCollection( title, artist, yearPublished){
     return album;
 }
 
-console.log(addToCollection('Goths', 'the mountain goats', '2015')); //album 1
+console.log(addToCollection('Goths', 'The Mountain Goats', '2015')); //album 1
 
-console.log(addToCollection('Bleed Out', 'the mountain goats', '2022')); //album 2
+console.log(addToCollection('Bleed Out', 'The Mountain Goats', '2022')); //album 2
 
 console.log(addToCollection('Whats Going On', 'Marvin Gaye', '1971')); //album 3
 
@@ -37,3 +37,31 @@ function showCollection(array){
 }
 
 showCollection(collection);
+
+
+
+function findByArtist ( artist ){
+    let artistArray = [];
+
+/*    for ( artist of collection){
+        if( artist === collection[].artist){
+           
+            artistArray.push(artist);
+        }
+        
+    }
+    return artistArray;
+    */ 
+   // The above for loop I tried to write using "for of" style, but I couldn't quite figure out how to make it work in the end
+
+    for( i = 0; i < collection.length; i++){
+        if ( artist === collection[i].artist){
+            artistArray.push(collection[i]);
+        }
+    }
+    return artistArray;
+}
+
+console.log(findByArtist('GridLick')); // this test should return the single album by GridLick, because that artist only has one album in the collection array
+console.log(findByArtist('The Mountain Goats')); // this test should return the two different albums by The Mountain Goats, also Goths wasn't released in 2015
+

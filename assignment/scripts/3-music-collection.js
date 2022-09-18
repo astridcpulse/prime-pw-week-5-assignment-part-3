@@ -24,7 +24,7 @@ console.log(addToCollection('Big Idgies Big Day', 'The Big Idgies', '2022')); //
 
 console.log(addToCollection('The Truth About', 'GridLick', '2022'));  //album 6
 
-console.log(collection);
+console.log(collection); // will log the entire added collection array to the console
 
 
 
@@ -36,7 +36,7 @@ function showCollection(array){
     }
 }
 
-showCollection(collection);
+showCollection(collection); // will log each added album to the console
 
 
 
